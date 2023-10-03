@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+	int A,X,Y,Z;
+	srand(time(NULL));
+	
+	if (X<5){
+		do{
+			X=rand()%5;
+			Y=rand()%10;
+			Z=rand()%10;
+			switch (X){
+				case 1:
+					A=Y+Z;
+					printf("%d+%d = %d\n",Y,Z,A);
+					break;
+					
+				case 2:
+					A=Y-Z;
+					printf("%d-%d = %d\n",Y,Z,A);
+					break;
+					
+				case 3:
+					A=Y*Z;
+					printf("%d*%d = %d\n",Y,Z,A);
+					break;
+					
+				case 4:
+					A=Y/Z;
+					printf("%d/%d = %d\n",Y,Z,A);
+					break;
+			}//Fin de switch
+		}while (X!=5);//Fin de while	
+	}//Fin de if
+	printf("El programa llego a terminado....\n");
+	printf("\n\n-------FIN DEL PROGRAMA-------");
+	return 0;
+}
