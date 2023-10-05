@@ -1,0 +1,16 @@
+#include <stdio.h>
+//printf("\n");
+int main() {
+	int i;
+	
+	for (i=1; i<101; i++){
+		if(i%3 == 0){
+			printf("El numero '%d' es multiplo de 3\n", i);
+		}else{//Fin de if
+			printf("El numero '%d' No es multiplo de 3\n", i);
+		}//Fin de else
+	}//Fin de for
+	
+	printf("\n\n--------FIN DEL PROGRAMA--------");
+	return 0;
+}
