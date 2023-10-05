@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+	int n1, n2, resultado, suma;
+	printf("Introduzca un numero:\n");
+	scanf("%d",&n1);
+	
+	printf("Introduzca otro numero:\n");
+	scanf("%d",&n2);
+	
+	printf("Cuanto suman?:\n");
+	scanf("%d",&suma);
+	
+	printf ("\n");
+	resultado = n1 + n2;
+	if (suma == resultado){
+		printf("La respuesta es correcto\n");
+	}else{
+		printf("La respuesta es INCORRECTA!\nLa suma de los numeros %d + %d es: %d \n",n1,n2,resultado);
+	}//Fin de if y else
+
+	printf ("\n\n--------FIN DEL PROGRAMA--------");
+	return 0;
+}
